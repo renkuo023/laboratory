@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/me/main",
+    "pages/aboutas/main",
+    "pages/counter/main",
+    "pages/product/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "工程部试验组",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/index/main",
+      "iconPath": "static/tabs/12.png",
+      "selectedIconPath": "static/tabs/11.png"
+    }, {
+      "text": "试验设备",
+      "pagePath": "pages/product/main",
+      "iconPath": "static/tabs/32.png",
+      "selectedIconPath": "static/tabs/31.png"
+    }, {
+      "text": "关于我们",
+      "pagePath": "pages/aboutas/main",
+      "iconPath": "static/tabs/22.png",
+      "selectedIconPath": "static/tabs/21.png"
+    }],
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

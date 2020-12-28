@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "试验设备",
+  "usingComponents": {
+    "i-row": "../.././static/iview/row/index",
+    "i-col": "../.././static/iview/col/index"
+  }
+}
