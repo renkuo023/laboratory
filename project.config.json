@@ -2,47 +2,13 @@
   "description": "项目配置文件。",
   "setting": {
     "urlCheck": true,
-    "es6": true,
-    "enhance": false,
+    "es6": false,
     "postcss": true,
-    "preloadBackgroundData": false,
     "minified": true,
-    "newFeature": true,
-    "coverView": true,
-    "nodeModules": true,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
-    "useApiHook": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "enableEngineNative": false,
-    "bundle": false,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
-    "packNpmManually": true,
-    "packNpmRelationList": [
-      {
-        "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./miniprogram/"
-      }
-    ],
-    "minifyWXSS": true
+    "newFeature": true
   },
   "miniprogramRoot": "dist/wx/",
   "compileType": "miniprogram",
-  "appid": "wxdbab803fb8054c20",
   "projectname": "laboratory",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},

@@ -53,11 +53,11 @@
   .progressbar{
     text-align: center;
     margin-top:10px;
-    margin-bottom:40px;
+    margin-bottom:10px;
     width:100%;
   }
   progress{
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
 </style>

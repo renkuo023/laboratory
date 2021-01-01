@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/main",
+    "pages/contactus/main",
     "pages/me/main",
     "pages/aboutas/main",
     "pages/counter/main",
@@ -28,6 +29,10 @@
       "pagePath": "pages/product/main",
       "iconPath": "static/tabs/32.png",
       "selectedIconPath": "static/tabs/31.png"
+    }, {"text": "联系我们",
+      "pagePath": "pages/contactus/main",
+      "iconPath": "static/tabs/tell.png",
+      "selectedIconPath": "static/tabs/tella.png"
     }, {
       "text": "关于我们",
       "pagePath": "pages/aboutas/main",
