@@ -12,32 +12,33 @@
         <cover-image :src="img"/>
       </swiper-item>
     </swiper>
+
     <YearProgress></YearProgress>
+
     <div class="testtitle">试验设备任务计划</div>
-<!--    <r-table-->
-<!--      :headers="headers"-->
-<!--      :items="items"-->
-<!--      :pagination="pagination"-->
-<!--      :total-items="totalItems"-->
-<!--      :loading="loading"-->
-<!--    >-->
-<!--    </r-table>-->
+
     <view class="table">
       <view class="tr bg-w">
-        <view class="th">head1</view>
-        <view class="th">head2</view>
-        <view class="th ">head3</view>
+        <view class="th">产品名称</view>
+        <view class="th">产品名称</view>
+        <view class="th">设备有限期</view>
+        <view class="th ">产品型号</view>
+        <view class="th ">产品描述</view>
       </view>
       <block v-for="(item,index) in listData" :key="code">
         <view class="tr bg-g" v-if="index % 2 == 0">
-          <view class="td">{{item.code}}</view>
-          <view class="td">{{item.text}}</view>
-          <view class="td">{{item.type}}</view>
+          <view class="td">{{item.equipmentName}}</view>
+          <view class="td">{{item.equipmentModel}}</view>
+          <view class="td">{{item.validdata}}</view>
+          <view class="td">{{item.productModel}}</view>
+          <view class="td">{{item.description}}</view>
         </view>
         <view class="tr" v-else>
-          <view class="td">{{item.code}}</view>
-          <view class="td">{{item.text}}</view>
-          <view class="td">{{item.type}}</view>
+          <view class="td">{{item.equipmentName}}</view>
+          <view class="td">{{item.equipmentModel}}</view>
+          <view class="td">{{item.validdata}}</view>
+          <view class="td">{{item.productModel}}</view>
+          <view class="td">{{item.description}}</view>
         </view>
       </block>
     </view>
@@ -59,112 +60,13 @@ export default {
         '/static/images/QW10.png'
       ],
       listData: [
-        {'code': '01', 'text': 'text1', 'type': 'type1'},
-        {'code': '02', 'text': 'text2', 'type': 'type2'},
-        {'code': '03', 'text': 'text3', 'type': 'type3'},
-        {'code': '04', 'text': 'text4', 'type': 'type4'},
-        {'code': '05', 'text': 'text5', 'type': 'type5'},
-        {'code': '06', 'text': 'text6', 'type': 'type6'},
-        {'code': '07', 'text': 'text7', 'type': 'type7'}
+        {'equipmentName': '1#高低温箱', 'equipmentModel': 'ESB605F', 'validdata': '20211023', 'productModel': 'A0101-1A', 'description': 'asdfghjkl'},
+        {'equipmentName': '2#高低温箱', 'equipmentModel': 'ESB605F', 'validdata': '20211023', 'productModel': 'A0101-1A', 'description': 'zxcvbnm,.'},
+        {'equipmentName': '3#高温箱', 'equipmentModel': 'WG3000', 'validdata': '20211023', 'productModel': 'A0101-1A', 'description': 'bnm,'},
+        {'equipmentName': '4#高低温湿热箱', 'equipmentModel': 'QW10', 'validdata': '20211023', 'productModel': 'A0101-1A', 'description': 'asdfghjkl'},
+        {'equipmentName': '振动台', 'equipmentModel': 'ES50-445', 'validdata': '20211023', 'productModel': 'A0101-1A', 'description': 'yuuoo'},
+        {'equipmentName': '冲击台', 'equipmentModel': 'SY100-100', 'validdata': '20211023', 'productModel': 'A0101-1A', 'description': 'czxhjiu'}
       ],
-      headers: [
-        {
-          text: 'Dessert',
-          align: 'start',
-          sortable: false,
-          value: 'name'
-        },
-        { text: 'Calories', value: 'calories' },
-        { text: 'Fat', value: 'fat' },
-        { text: 'Carbs', value: 'carbs' },
-        { text: 'Protein', value: 'protein' },
-        { text: 'Iron', value: 'iron' }
-      ],
-      items: [
-        {
-          name: 'Frozen Yogurt',
-          calories: 159,
-          fat: 6.0,
-          carbs: 24,
-          protein: 4.0,
-          iron: '1%'
-        },
-        {
-          name: 'Ice cream sandwich',
-          calories: 237,
-          fat: 9.0,
-          carbs: 37,
-          protein: 4.3,
-          iron: '1%'
-        },
-        {
-          name: 'Eclair',
-          calories: 262,
-          fat: 16.0,
-          carbs: 23,
-          protein: 6.0,
-          iron: '7%'
-        },
-        {
-          name: 'Cupcake',
-          calories: 305,
-          fat: 3.7,
-          carbs: 67,
-          protein: 4.3,
-          iron: '8%'
-        },
-        {
-          name: 'Gingerbread',
-          calories: 356,
-          fat: 16.0,
-          carbs: 49,
-          protein: 3.9,
-          iron: '16%'
-        },
-        {
-          name: 'Jelly bean',
-          calories: 375,
-          fat: 0.0,
-          carbs: 94,
-          protein: 0.0,
-          iron: '0%'
-        },
-        {
-          name: 'Lollipop',
-          calories: 392,
-          fat: 0.2,
-          carbs: 98,
-          protein: 0,
-          iron: '2%'
-        },
-        {
-          name: 'Honeycomb',
-          calories: 408,
-          fat: 3.2,
-          carbs: 87,
-          protein: 6.5,
-          iron: '45%'
-        },
-        {
-          name: 'Donut',
-          calories: 452,
-          fat: 25.0,
-          carbs: 51,
-          protein: 4.9,
-          iron: '22%'
-        },
-        {
-          name: 'KitKat',
-          calories: 518,
-          fat: 26.0,
-          carbs: 65,
-          protein: 7,
-          iron: '6%'
-        }
-      ],
-      pagination: {
-        rowsPerPage: 10
-      }, // 分页信息
       totalItems: 0, // 总条数
       loading: true
     }

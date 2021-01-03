@@ -28,7 +28,7 @@
       </i-step>
       <i-step icon="mobilephone_fill">
         <view slot="title">
-          传真asdfg
+          传真
         </view>
         <view slot="content">
           010-69766012-8000
